@@ -4,29 +4,29 @@ clusters:
     certificate-authority: ca.crt
     extensions:
     - extension:
-        last-update: Thu, 01 Sep 2022 10:23:54 CEST
+        last-update: Tue, 15 Nov 2022 08:30:01 CET
         provider: minikube.sigs.k8s.io
-        version: v1.26.1
+        version: v1.28.0
       name: cluster_info
-    server: https://192.168.49.2:8443
-  name: minikube
+    server: https://192.168.67.2:8443
+  name: jenkins-java-profile
 contexts:
 - context:
-    cluster: minikube
+    cluster: jenkins-java-profile
     extensions:
     - extension:
-        last-update: Thu, 01 Sep 2022 10:23:54 CEST
+        last-update: Tue, 15 Nov 2022 08:30:01 CET
         provider: minikube.sigs.k8s.io
-        version: v1.26.1
+        version: v1.28.0
       name: context_info
     namespace: default
-    user: minikube
-  name: minikube
-current-context: minikube
+    user: jenkins-java-profile
+  name: jenkins-java-profile
+current-context: jenkins-java-profile
 kind: Config
 preferences: {}
 users:
-- name: minikube
+- name: jenkins-java-profile
   user:
     client-certificate: minikube/client.crt
     client-key: minikube/client.key
