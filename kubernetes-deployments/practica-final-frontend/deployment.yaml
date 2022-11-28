@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: practica-final-frontend
+  name: angular-14-app
   labels:
      app: angular-14-app
      type: front-end
 spec:
   template:
      metadata:
-       name: practica-final-frontend
+       name: angular-14-app
        labels: 
          app: angular
          type: front-end
      spec:
          containers:
-           - name: practica-final-frontend
+           - name: angular-14-app
              image: "juliocvp/practica-final-frontend:latest"
              imagePullPolicy: Always
   replicas: 1
@@ -22,17 +22,17 @@ spec:
     matchLabels:
       app: angular
       type: front-end
----
-apiVersion: v1
-kind: Service
-metadata:
-  name: practica-final-frontend
-spec:
-  selector:
-    app: angular
-  type: NodePort
-  ports:
-    - protocol: TCP
-      targetPort: 80
-      port: 80
-      nodePort: 30000
+#---
+#apiVersion: v1
+#kind: Service
+#metadata:
+#  name: angular-14-app
+#spec:
+#  selector:
+#    app: angular
+#  type: NodePort
+#  ports:
+#    - protocol: TCP
+#      targetPort: 80
+#      port: 80
+#      nodePort: 30000
