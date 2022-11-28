@@ -15,7 +15,8 @@ spec:
     spec:
       containers:
         - name: practica-final-backend
-          image: "juliocvp/practica-final-backend:0.0.1-SNAPSHOT"
+          #image: "juliocvp/practica-final-backend:0.0.1-SNAPSHOT"
+          image: "juliocvp/spring-boot-app:latest"
           imagePullPolicy: Always
   replicas: 1
   selector:
