@@ -15,7 +15,7 @@ spec:
      spec:
          containers:
            - name: angular-14-app
-             image: "juliocvp/practica-final-frontend:latest"
+             image: IMAGE_NAME
              imagePullPolicy: Always
   replicas: 1
   selector:
